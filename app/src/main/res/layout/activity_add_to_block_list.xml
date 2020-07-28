@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backGR"
+    tools:context=".AddToBlockListActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add number to block list"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:id="@+id/head"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter number"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/head"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:textColorHint="#6EFFFFFF"
+        android:id="@+id/BLnumberET"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BLnumberET"
+        android:layout_margin="20dp"
+        android:id="@+id/submitBtn"
+        android:text="SUBMIT"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submitBtn"
+        android:layout_margin="20dp"
+        android:id="@+id/viewAllBtn"
+        android:text="VIEW ALL"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/viewAllBtn"
+        android:layout_margin="20dp"
+        android:id="@+id/consensusBtn"
+        android:text="FORCE SCAN"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/consensusBtn"
+        android:layout_margin="20dp"
+        android:id="@+id/blockchainBtn"
+        android:text="BLOCKCHAIN"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:layout_below="@+id/blockchainBtn"
+        android:layout_centerHorizontal="true"
+        android:text=""
+        android:textColor="#ffffff"/>
+</RelativeLayout>

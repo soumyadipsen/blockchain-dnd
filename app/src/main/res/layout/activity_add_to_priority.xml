@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backGR"
+    android:layout_height="match_parent"
+    tools:context=".AddToPriorityActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add number to priority list"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_margin="40dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:id="@+id/head"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter number"
+        android:layout_margin="20dp"
+        android:layout_below="@+id/head"
+        android:backgroundTint="#ffffff"
+        android:textColor="#ffffff"
+        android:textColorHint="#6EFFFFFF"
+        android:id="@+id/PLnumberET"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/PLnumberET"
+        android:layout_margin="20dp"
+        android:id="@+id/submitBtn"
+        android:text="SUBMIT"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
